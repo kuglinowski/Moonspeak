@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+        /* GRID */
+
+    /*-- our cleafix hack -- */ 
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+[class*='col-'] {
+    float: left; 
+    min-height: 1px; 
+    width: calc(100%/12);
+    /*-- our gutter -- */
+    padding-right: 1.6%; 
+}
+
+[class*='col-']:last-child{
+    padding-right: 0;
+}
+
+.col-1 {
+    width: calc(100%/12);
+}
+
+.col-2 {
+    width: calc((100%/12)*2);
+}
+
+.col-3 {
+    width: calc((100%/12)*3);
+}
+
+.col-4 {
+    width: calc((100%/12)*4);
+}
+
+.col-5 {
+    width: calc((100%/12)*5);
+}
+
+.col-6 {
+    width: calc((100%/12)*6);
+}
+
+.col-7 {
+    width: calc((100%/12)*7);
+}
+
+.col-8 {
+    width: calc((100%/12)*8);
+}
+
+.col-9 {
+    width: calc((100%/12)*9);
+}
+
+.col-10 {
+    width: calc((100%/12)*10);
+}
+
+.col-11 {
+    width: calc((100%/12)*11);
+}
+
+.col-12 {
+    width: calc((100%/12)*12);
+}
+
+
+
+.container{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1110px;
+}
+        /* Header */
+.header{
+    background: #fff url('../img/header_bg.jpg') left/cover no-repeat;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.header--text{
+    font: 300 2.4em 'Roboto';
+    color: #333333;
+}
+
+
+            /* AARHUS */
+.about{
+    min-height: 85vh;
+    width: 100%;
+    background: #efeee9;
+    padding-top: 10vh
+}
+.about_container{
+    background: #fff;
+}
+
+.about_wrapper{
+    
+    text-align: center;
+    padding: 15vh 0;
+}
+.aarhus--title{
+    font: 300 4em 'Roboto';
+    color: #444444;
+    margin: 0;
+}
+.aarhus--text{
+    font: 300 2em/1.4em 'Roboto';
+    color: #222222;
+    text-align: left;
+    margin: 30px 0 55px 0
+}
+.aarhus--btn{
+    color: #222222;
+    background: #fff;
+    border: #222222 2px solid;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 38px;
+    font: 900 1.8em 'Roboto';
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, color, background-color;
+    transition-property: transform, color, background-color;
+}
+.aarhus--btn:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.aarhus--btn:hover, .aarhus--btn:focus, .aarhus--btn:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  color: #fff;
+  background: #222;
+  border: #222222 2px solid;
+  /* move the element up by 5px */
+}
+.aarhus--btn:hover:before, .aarhus--btn:focus:before, .aarhus--btn:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+.portfolio__block{
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+}
+.portfolio__img{
+  width: 100%;
+  opacity: 0.7;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1.15);
+}
+
+.portfolio__block:hover .portfolio__img{
+  opacity: 1;
+  transform: scale(1);
+}
+.portfolio__col{
+  padding: 0;
+}
