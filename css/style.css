@@ -209,3 +209,7 @@ body{
 .portfolio__col{
   padding: 0;
 }
+.portfolio__figcaption{
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
