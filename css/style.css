@@ -109,17 +109,17 @@ body{
 
 
             /* AARHUS */
-.aarhus{
+.about{
     min-height: 85vh;
     width: 100%;
     background: #efeee9;
-    padding: 12vh 0;
+    padding-top: 10vh
 }
-.aarhus_container{
+.about_container{
     background: #fff;
 }
 
-.aarhus_wrapper{
+.about_wrapper{
     
     text-align: center;
     padding: 15vh 0;
@@ -188,123 +188,28 @@ body{
 
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
-.portfolio{
-    background: #efeee9;
-}
-.portfolio__wraper{
-  max-width: 1680px;
-    margin: 0 auto;
-    padding: 12vh 0;
-    
-}
 
 .portfolio__block{
   margin: 0;
   padding: 0;
   background: #000;
   overflow: hidden;
-  position: relative;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 .portfolio__img{
   width: 100%;
   opacity: 0.7;
   transition: opacity 0.35s, transform 0.35s;
   transform: scale(1.15);
-  vertical-align: bottom;
 }
 
 .portfolio__block:hover .portfolio__img{
   opacity: 1;
   transform: scale(1);
-  vertical-align: top;
 }
 .portfolio__col{
   padding: 0;
-
 }
 .portfolio__figcaption{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  text-align: center;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
-
-.portfolio__block:hover .portfolio--title {
-  transition: all 0.35s;
-  opacity: 1;
-  transform: scale(1.25) , translateY(25px);
-
-}
-
-.portfolio--title{
-  font: 400 2.4em 'Roboto';
-  color:  #fefefe;
-  text-transform: uppercase;
-  margin: 0;
-  opacity: 0;
-}
-
-.portfolio__text{
-  padding-bottom: 12vh;
-  text-align: center;
-}
-.portfolio__text--p{
-  font: 100 3.6em/1.3em 'Roboto';
-  color: #222;
-
-}
-
-.about{
-  background: url('../img/about_img.jpg') left top/50% no-repeat;
-}
-.about__block{
-  padding: 10vh 0;
-}
-.about__title{
-  font: 300 1.4em/2em 'Roboto';
-  text-transform: uppercase;
-  color: #290a59;
-  letter-spacing: 5px
-
-}
-.about__text{
-  font: 300 1.4em/2em 'Roboto';
-  color: #6d6081;
-}
-
-.articles{
-  background: #efeee9;
-}
-
-.articles__block{
-  border-right: #efeee9 30px solid;
-  background: #fff;
-  padding: 5em !important;
-  text-align: center;
-}
-
-.article--title{
-  font: 900 1.8em 'Roboto';
-  color: #222222;
-}
-.article--text{
-  font: 400 1.6em 'Roboto';
-  color: #222222;
-  padding-bottom: 2em;
-}
-.article_link{
-  font: 400 1.6em 'Roboto';
-  color: #4eaeff;
-  padding-top: 15px;}
