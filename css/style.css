@@ -286,6 +286,7 @@ body{
 
 .articles{
   background: #efeee9;
+  padding: 12vh 0;
 }
 
 .articles__block{
@@ -308,3 +309,41 @@ body{
   font: 400 1.6em 'Roboto';
   color: #4eaeff;
   padding-top: 15px;}
+
+
+.contact{
+  background-color: #353535;
+  color: #fff;
+}
+.contact--text{
+  font: 300 1.6em 'Roboto';
+  padding-top: 100px;
+}
+.contact__part--title{
+  font: 900 1.6em 'Roboto';
+}
+.contact__part--number{
+  font: 400 1.6em 'Roboto';
+}
+.contact__part--email{
+  font: 400 1.6em 'Roboto';
+}
+.contact__map{
+  max-height: 460px;
+}
+
+.footer{
+  padding: 50px 0;
+  background: #efeee9;
+}
+
+.footer__icons{
+  color: #353535;
+  margin-right: 0.4em;
+}
+.footer__copyright{
+  font: 300 2em 'Roboto';
+  color: #353535;
+  text-align: right;
+  margin: 0;
+}
